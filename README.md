@@ -1,0 +1,2 @@
+# R5T.O0002
+Project reference management operations for Visual Studio solution and project files.
