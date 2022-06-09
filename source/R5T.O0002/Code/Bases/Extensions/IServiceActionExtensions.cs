@@ -15,7 +15,7 @@ namespace R5T.O0002
     public static class IServiceActionExtensions
     {
         /// <summary>
-        /// Adds the <see cref="O001_AddProjectReferencesToProject"/> operation as a <see cref="ServiceLifetime.Singleton"/>.
+        /// Adds the <see cref="AddProjectReferencesToProject"/> operation as a <see cref="Microsoft.Extensions.DependencyInjection.ServiceLifetime.Singleton"/>.
         /// </summary>
         public static IServiceAction<AddProjectReferencesToProject> AddAddProjectReferencesToProjectAction(this IServiceAction _,
             IServiceAction<IProjectRepository> projectRepositoryAction,
@@ -35,7 +35,7 @@ namespace R5T.O0002
         }
 
         /// <summary>
-        /// Adds the <see cref="GetRecursiveDependenciesCount"/> operation as a <see cref="ServiceLifetime.Singleton"/>.
+        /// Adds the <see cref="GetRecursiveDependenciesCount"/> operation as a <see cref="Microsoft.Extensions.DependencyInjection.ServiceLifetime.Singleton"/>.
         /// </summary>
         public static IServiceAction<GetRecursiveDependenciesCount> AddGetRecursiveDependenciesCountAction(this IServiceAction _,
             IServiceAction<IVisualStudioProjectFileReferencesProvider> visualStudioProjectFileReferencesProviderAction)

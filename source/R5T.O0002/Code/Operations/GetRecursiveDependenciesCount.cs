@@ -22,7 +22,7 @@ namespace R5T.O0002
         public async Task<int> Run(
             string projectFilePath)
         {
-            var recursiveProjectReferences = await this.VisualStudioProjectFileReferencesProvider.GetAllRecursiveProjectReferenceDependenciesExclusive(
+            var recursiveProjectReferences = await this.VisualStudioProjectFileReferencesProvider.GetAllRecursiveProjectReferenceDependencies_Exclusive(
                 projectFilePath); // Use exclusive to only report dependency count, not dependency count + 1.
 
             var output = recursiveProjectReferences.Length;
